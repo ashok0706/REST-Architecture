@@ -56,7 +56,7 @@ api/users/new	    GET	            Show form for adding new user
 api/users	        POST           	Add a user
 api/users/1  	    PUT	            Update a user with id = 1
 api/users/1/edit    GET             Show edit form for user with id = 1
-api/users/1	       DELETE	        Delete a user with id = 1
+api/users/1	        DELETE	        Delete a user with id = 1
 api/users/1    	    GET	            Get a user with id = 1
 
 ```
@@ -81,11 +81,11 @@ app.use(methodOverride("_method"));
 #
 #### **HTTP verbs:** Some of the common HTTP methods/verbs are described below:
 
-* ### **GET:** Retrieves one or more resources identified by the request URI and it can cache the information receive.
+* #### **GET:** Retrieves one or more resources identified by the request URI and it can cache the information receive.
 
-* ### **POST:** Create a resource from the submission of a request and response is not cacheable in this case. This method is unsafe if no security is applied to the endpoint as it would allow anyone to create a random resource by submission.
+* #### **POST:** Create a resource from the submission of a request and response is not cacheable in this case. This method is unsafe if no security is applied to the endpoint as it would allow anyone to create a random resource by submission.
 * #### **PUT:** Update an existing resource on the server specified by the request URI.
-* ### **DELETE:** Delete an existing resource on the server specified by the request URI. It always return an appropriate HTTP status for every request.
+* #### **DELETE:** Delete an existing resource on the server specified by the request URI. It always return an appropriate HTTP status for every request.
 
 * #### GET, PUT, DELETE methods are also known as Idempotent methods. Applying an operation once or applying it multiple times has the same effect. Example: Delete any resource from the server and it succeeds with 200 OK and then try again to delete that resource than it will display an error message 410 GONE.
 
